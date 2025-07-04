@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/editTextTarget"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan URL atau IP"
+            android:inputType="textUri"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkboxHeaders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cek Header Keamanan"
+            app:layout_constraintTop_toBottomOf="@id/editTextTarget"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkboxPort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan Port Umum"
+            app:layout_constraintTop_toBottomOf="@id/checkboxHeaders"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkboxFuzz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brute-force Direktori"
+            app:layout_constraintTop_toBottomOf="@id/checkboxPort"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkboxUserAgent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gunakan User-Agent Googlebot"
+            app:layout_constraintTop_toBottomOf="@id/checkboxFuzz"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkboxPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POST Dummy Login"
+            app:layout_constraintTop_toBottomOf="@id/checkboxUserAgent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkboxApiKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cek API Key Tersembunyi"
+            app:layout_constraintTop_toBottomOf="@+id/checkboxPost"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="8dp" />
+
+          <CheckBox
+            android:id="@+id/checkboxRobots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cek API Key Tersembunyi"
+            app:layout_constraintTop_toBottomOf="@+id/checkboxApiKey"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/buttonStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mulai Tes"
+            app:layout_constraintTop_toBottomOf="@id/checkboxRobots"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textViewResult"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Hasil akan muncul di sini..."
+            android:paddingTop="16dp"
+            android:paddingBottom="32dp"
+            android:textIsSelectable="true"
+            app:layout_constraintTop_toBottomOf="@id/buttonStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

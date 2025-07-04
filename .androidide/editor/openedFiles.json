@@ -1,0 +1,50 @@
+{
+  "allFiles": [
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/Low Penetrasion Web/app/src/main/java/com/low/penetrasionweb/MainActivity.java",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        },
+        "start": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/Low Penetrasion Web/app/src/main/res/layout/activity_main.xml",
+      "selection": {
+        "end": {
+          "column": 67,
+          "index": 3639,
+          "line": 87
+        },
+        "start": {
+          "column": 67,
+          "index": 3639,
+          "line": 87
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/Low Penetrasion Web/.gradle/8.1.1/dependencies-accessors/gc.properties",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        },
+        "start": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        }
+      }
+    }
+  ],
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/Low Penetrasion Web/app/src/main/res/layout/activity_main.xml"
+}
